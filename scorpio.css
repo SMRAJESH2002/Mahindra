@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(36, 34, 34);
+}
+.container{
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.nav{
+    display: none !important;
+}
+.logo{
+    display: none !important;
+}
+.menbar{
+    display: none !important;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+/* nav image */
+.nav1{
+    height:70px;
+width: 300px;
+}
+
+/* car image */
+.pic > p{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   }
+.card1{
+  height:160px;
+  width: 180px; 
+  border: 2px solid black; 
+  box-shadow: 0px 0px 5px white ;
+}
+
+.c1{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+.card1 > p{
+    font-size:25;
+    color:white;
+    padding: 10px;
+}
+.card1 > p:hover{
+    background-color: red;
+    border: 2px solid black;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+/*  car color */
+.color{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:black;
+   gap:12px;
+   position: relative;
+}
+.color > h1{
+    color: white;
+}
+/* color button */
+.bu1{
+    background-color: blue;
+    height:50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.bu2{
+    height:50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.bu3{
+    height:50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.bu4{
+    background-color:#254117 ;
+    height:50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius:50%;
+}.bu5{
+    height:50px;
+    width: 50px;
+    border: 2px solid b;
+    border-radius:50%;
+}
+/* car div */
+.car1{
+    height:350px;
+    width:50%;
+    padding-left: 6rem;
+    margin-top: 2rem;
+    overflow-y:scroll;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+.car2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height:350px;
+    width:50%;
+}
+
+.icon1{
+    background-color:#be2222;
+    height:40px;
+    width:40px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.icon2{
+    background-color: rgb(12, 12, 12);
+    height:40px;
+    width:40px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.icon3{
+    background-color:#747474;
+    height:40px;
+    width:40px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.icon4{
+    background-color:#254117;
+    height:40px;
+    width:40px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+.icon5{
+    background-color:#bab9b9;
+    height:40px;
+    width:40px;
+    border: 2px solid black;
+    border-radius:50%;
+}
+
+.bigbox{
+    width:570px;
+    height:200px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding:12px;
+}
+
+.h1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.h1a{
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+.h1b{
+    font-size: 20px;
+    font-weight: 900;
+    /* margin-top: 12px; */
+}
+
+.h2{
+    display: flex;
+    gap:28px;
+}
+@media screen and (min-width:320px) and (max-width:720px) {
+    .container{
+    flex-direction: column;
+    }
+    .navbar{
+        display: none !important;
+    }
+    .nav{
+        display: inline !important;
+        height:85px;
+        width: 100%;
+        background-color:black;
+    }
+
+     
+      .logo{
+        display: inline !important;
+        background-color: black;
+        height:80px;
+        width: 130px;
+      }
+      .menbar{
+        color:white;
+        font-size:30px;
+        display: inline !important;
+        position: relative;
+        left:130px;
+        top:-50px;
+        }
+    .car1{
+      margin-top: 180px;
+      height:280px;
+      width:366px;
+      overflow: hidden;
+    }
+    .bigbox{
+        width:fit-content;
+        height: fit-content;
+    }
+    .card{
+        flex-direction: column;
+
+    }
+    .car1{
+        width: 98%;
+    }
+    .car2{
+        margin-top: 200px;
+    }
+    .color{
+        position:absolute ;
+        margin-top:640px;
+        float: left;
+    }
+    h1{
+        position: absolute;
+        margin-top:-80px;
+    }
+    .pic > img{
+        height:250px;
+        width: 250px;
+        margin-left: -50px;
+        object-fit:fill;
+    }
+    .pic{
+        width:90%;
+    }
+}
